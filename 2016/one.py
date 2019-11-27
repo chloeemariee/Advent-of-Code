@@ -6,22 +6,32 @@
 #which libraries should I include?
 
 
-filename = "input03.txt"
-triangles = file_object.readlines()
-#https://stackabuse.com/read-a-file-line-by-line-in-python/
-accum = 0 
 
-#https://www.reddit.com/r/adventofcode/comments/5g80ck/2016_day_3_solutions/daq7xok/
-#triangle values into int?
+#https://github.com/JIghtuse/adventofcode-solutions/blob/master/2016/day03/solution.py
+#I understand this one better
 
+#split each number in the rows and turn them into integers
+def read_data(fname):
+    data = []
+    for line in open(fname).readlines():
+        a, b, c = line.split()
+        data.append((int(a), int(b), int(c)))
+    return data
 
-if side[] = side[1] + side [2] > side[3] 
-and side[] = side[2] + side [3] > side[1] 
-and side[] = side[1] + side [3]] > side[2] 
-return accum + 1 , string +1 
+lines = list(open(fname).readlines())
 
-else 
-return accum, string + 1
+# number of possible triangles
+def validTri (read_data):
+    data = read_data("input03.txt")
+
+    if side[] = int[a] + int[b] > int[b] 
+    and side[] = int[b] + int [c] > int[a] 
+    and side[] = int[a] + int [c]] > int[b] 
+    return accum + 1 , line +1 
+   
+    else 
+    return accum, line + 1
+
 
 print ("Number of valid triangles:")
 print validTri
