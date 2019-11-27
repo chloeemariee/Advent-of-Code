@@ -20,17 +20,16 @@ def read_data(fname):
 
 lines = list(open(fname).readlines())
 
+#need to call the possible triangles something side [] is invalid, ditch side []
+
 # number of possible triangles
+accum = 0 
 def validTri (read_data):
     data = read_data("input03.txt")
 
-    if side[] = int[a] + int[b] > int[b] 
-    and side[] = int[b] + int [c] > int[a] 
-    and side[] = int[a] + int [c]] > int[b] 
-    return accum + 1 , line +1 
-   
-    else 
-    return accum, line + 1
+    if int[a] + int[b] > int[b] and int[b] + int [c] > int[a] and int[a] + int [c] > int[b] :
+        return (accum + 1 , line +1)
+    else return (accum, line + 1)
 
 
 print ("Number of valid triangles:")
