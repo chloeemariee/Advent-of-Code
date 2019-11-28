@@ -6,7 +6,6 @@
 #which libraries should I include?
 
 
-
 #https://github.com/JIghtuse/adventofcode-solutions/blob/master/2016/day03/solution.py
 #I understand this one better
 
@@ -20,8 +19,6 @@ def read_data(fname):
 
 lines = list(open(fname).readlines())
 
-#need to call the possible triangles something side [] is invalid, ditch side []
-
 # number of possible triangles
 accum = 0 
 def validTri (read_data):
@@ -29,8 +26,9 @@ def validTri (read_data):
 
     if int[a] + int[b] > int[b] and int[b] + int [c] > int[a] and int[a] + int [c] > int[b] :
         return (accum + 1 , line +1)
-    else return (accum, line + 1)
+    else:
+        return (accum, line + 1)
 
-
+# output
 print ("Number of valid triangles:")
-print validTri
+print (validTri)
