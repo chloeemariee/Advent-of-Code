@@ -10,14 +10,14 @@
 #I understand this one better
 
 #split each number in the rows and turn them into integers
-def read_data(fname):
+def read_data(input03):
     data = []
-    for line in open(fname).readlines():
+    for line in open(input03).readlines():
         a, b, c = line.split()
         data.append((int(a), int(b), int(c)))
     return data
 
-lines = list(open(fname).readlines())
+lines = list(open("input03.txt").readlines())
 
 # number of possible triangles
 accum = 0 
@@ -30,5 +30,4 @@ def validTri (read_data):
         return (accum, line + 1)
 
 # output
-print ("Number of valid triangles:")
-print (validTri)
+print ("Number of valid triangles:", validTri)
