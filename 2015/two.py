@@ -17,6 +17,5 @@ with open ("input01.txt") as fo: # the 'with' means I don't need to close
         floor +1 , position +1
     if ")" :
         floor -1 , position +1
-    if floor = -1 :
-        break
+    if floor -1 :
         print ("It took you long enough", position)
