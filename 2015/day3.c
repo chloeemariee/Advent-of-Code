@@ -7,7 +7,7 @@
 #include <string.h>
 // These might be general useful things to include
 
-#define MAXMOVES 1000000
+#define MAXMOVES 100000000
 
 int main (void) {
     char buffer[MAXMOVES] = { "\0"}; // buffer is idiomatic
@@ -25,7 +25,14 @@ int main (void) {
         printf( " :( \n");
         return 1;
     }
-    fclose(fp);
+    fclose(fp); //checked that this is opening and reading the file, and it does!
+
+    char moves[number_of_moves+1] = {"\0"};
+    strncpy( moves, buffer, number_of_moves);
+
+    for (int i = 0; i < number_of_moves; i++ ){ //spits back the contents of the file as one long string
+        printf( "%c", moves [i] );
+    }
 
     printf( "\n number of moves %d\n\n", number_of_moves);
 
