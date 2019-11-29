@@ -5,8 +5,8 @@
 
 #https://github.com/jjhelmus/adventofcode/blob/master/day01.py simple but understandable, I hope...
 
-open ("input01.txt")
-    directions = f.read()
+with open ("input01.txt") as fo:
+    directions = fo.read()
     floor = directions.count( "(" ) - directions.count( ")" )
 
 print("Go to floor:", floor)
