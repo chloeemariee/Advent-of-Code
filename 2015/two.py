@@ -13,9 +13,12 @@ position = 1
 #The Count
 with open ("input01.txt") as fo: # the 'with' means I don't need to close
     directions = fo.read()
-    if "(":
-        floor +1 , position +1
-    if ")" :
-        floor -1 , position +1
-    if floor -1 :
-        print ("It took you long enough", position)
+    while floor > -2 :
+        if "(":
+            floor +1 , position +1
+        if ")" :
+            floor -1 , position +1
+        if floor == -1:
+            break
+    
+print ("It took you long enough", position)
