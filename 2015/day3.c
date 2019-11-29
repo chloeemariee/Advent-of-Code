@@ -16,7 +16,7 @@ int main (void) {
     size_t difference_of_memory_locations;
     int number_of_moves;
 
-    fp = fopen( "input03.txt", "r"):
+    fp = fopen( "input03.txt", "r");
     if ( fgets( buffer, MAXMOVES, fp ) != NULL) {
         address_of_null = strchr( buffer, "\0");
         difference_of_memory_locations = address_of_null - &buffer[0]; //basically looking at the length of the whole sentence address of last character - address of first character
