@@ -1,23 +1,26 @@
 # Advent of Code 2015 day 01 
 # PART TWO 
 
-#puzzle file name = input01.txt
+# puzzle file name = input01.txt
+# now without "enumerate" using my old If and While loop
 
-#https://github.com/ChrisPenner/Advent-Of-Code-Polyglot/blob/master/2015/python/01/part2.py
-#a way to fix my original if version
-
-#Setting the scene becuase now we need to keep track
+# Set the stage
 floor = 0 
 position = 1
 
-#The Count
-with open ("input01.txt") as f: # the 'with' means I don't need to close
-    for position, char in enumerate(f.read(), 1):
-        if char == "(":
-            floor += 1 
-        elif char == ")" :
-            floor -= 1 
-        if floor == -1:
-            break;
+# Open the file 
+with open ("input01.txt") as fo: 
+    directions = fo.read()
 
-print ("It took you long enough", position)
+# Start the count
+while floor > -1 : 
+    if directions [position-1] == "(" : #[position-1] to start at 0th place
+        floor += 1
+        position += 1
+    elif directions [position-1] == ")" :
+        floor -= 1
+        position += 1
+
+# Time to find out how many flights of stairs Santa had to take
+# making sure to subtract 1 to counter the original [position-1]
+print("It took you long enough.", position-1)
