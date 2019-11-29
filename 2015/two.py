@@ -3,18 +3,20 @@
 
 #puzzle file name = input01.txt
 
-#https://github.com/jjhelmus/adventofcode/blob/master/day01.py simple but understandable, I hope...
+#https://github.com/jjhelmus/adventofcode/blob/master/day01.py their part two is a  
+#little confusing but the elements mesh so let's see what we can make of it
 
-#Setting the scene
+#Setting the scene becuase now we need to keep track
 floor = 0 
 position = 1
 
-
-with open ("input01.txt") as fo:
+#The Count
+with open ("input01.txt") as fo: # the 'with' means I don't need to close
     directions = fo.read()
-    floor = directions.count( "(" ) - directions.count( ")" )
-
-if floor = -1
-    break
-
-print ("It took you long enough", position)
+    if "(":
+        floor +1 , position +1
+    if ")" :
+        floor -1 , position +1
+    if floor = -1 :
+        break
+        print ("It took you long enough", position)
