@@ -1,4 +1,4 @@
-// Advent of Code 2015 Day 03
+// Advent of Code 2015 Day 03, part I
 // In class with Ian, whole class contribution
 // input file = input03.txt
 
@@ -39,3 +39,24 @@ int main (void) {
     return 0;
 }
 //this isn't working, check upload from Ian after class
+
+// plan of attack:
+// in part one you want to build in as much redundancy as possible just in case you need it for part two
+// For python, you could create a set to make sure everything in the list isn't a repeat
+// Ian has a subroutine for counting the number of moves, from there let's make a grid
+// int x=0, y=0 this will be the starting point in the grid (maybe an ordered pair struct)
+// now you need to make sense of these moves then record where you go : a modular function 
+// eats charaters and the spits out where you go, declare a function:
+void mover (const char current_move, int *x, int *y) { //cont char becuase it saves on memory
+    //switch case statement, a more compact way to do a long else if
+    switch ( current_move ) {
+        case ( ">"): *x = *x + 1; break; // same thing as x -= 1 I think
+        case ( "^"): *y = *y + 1; break;
+        case ( "<"): *x = *x - 1; break;
+        case ( "v"): *y = *y - 1; break;
+        default: printf( "\n :( \n"); // we should never get here this is just in case it doesn't work
+    }
+    return;
+}
+//try executing this function to make sure it's working, i.e. print all the x, y coordinates in a column
+// you'll need to change how it prints at the end obviously
