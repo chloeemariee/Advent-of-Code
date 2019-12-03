@@ -26,7 +26,7 @@ int modules;
 fclose(fp);
 
 int fuel_for_module = modules /= 3 -= 2 ;// rounding after / 3?
-int total_fuel = SUM(fuel_for_module) ;
+int total_fuel = (fuel_for_module) ;
 
 int main ; {
 
