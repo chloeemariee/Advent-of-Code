@@ -11,14 +11,24 @@
 #include <string.h>
 #include <math.h>
 
+#define MAX_LINES 500
+#define MAX_DIGITS 100
+
+int modules (void) {
+    char line [MAX_DIGITS] [MAX_LINES];
+    char input[];
+    FILE* fp = NULL;
+}
+
 //File IO
 fp = fopen("input.txt","r");
+int modules;
+fclose(fp);
 
-module = m
-fuel_for_module = m / 3 - 2 // rounding after / 3?
+int fuel_for_module = modules /= 3 -= 2 ;// rounding after / 3?
+int total_fuel = SUM(fuel_for_module) ;
 
-int main {
-
+int main ; {
 
     
 }
