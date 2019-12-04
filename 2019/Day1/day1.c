@@ -15,6 +15,29 @@ Calculate the fuel for each module (input.txt) and sum them
 #define MAX_LINES 500
 #define MAX_DIGITS 100
 
+
+/* What is going on? What to do now?
+1. Open input.txt
+
+copy format from existing files in C
+
+2. Define variables
+
+mass = input.txt
+fuel = (( mass /3 ) - 2 )
+fuel_total = SUM(fuel)
+
+3. Main?
+
+int main ; {
+
+
+}
+
+
+
+/* AHHHHHHHHHH
+
 int modules (void) {
     char line [MAX_DIGITS] [MAX_LINES];
     char input[];
@@ -29,12 +52,8 @@ fclose(fp);
 int fuel_for_module = modules /= 3 -= 2 ;// rounding after / 3?
 int total_fuel = (fuel_for_module) ;
 
-int main ; {
 
-    
-}
-
-/* keep the fuel for each module in an array, you'll need them seperate for part 2
+keep the fuel for each module in an array, you'll need them seperate for part 2
 gotta use tail recursion
 recursion
 base case
