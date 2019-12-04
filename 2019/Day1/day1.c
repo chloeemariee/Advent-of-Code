@@ -16,40 +16,26 @@ Calculate the fuel for each module (input.txt) and sum them
 #define MAX_DIGITS 100
 
 
-// 1. Open input.txt aka file IO
+// Main, find fuel total for rocket modules
+int main (what_goes_in_here); {
+
+FILE* fp;
+fuel_total;
+
+int fuel = (( mass / 3 ) - 2 ) ; // how do you round down?
+int fuel_total = SUM(fuel) ;
 
 fp = fopen("input.txt","r");
 //needs to read.lines or something
 int mass;
 fclose(fp);
 
-// 2. Define variables
-
-int mass = input.txt ;
-int fuel = (( mass / 3 ) - 2 ) ; // how do you round down?
-int fuel_total = SUM(fuel) ;
-
-// 3. Main
-
-int main (//what going in here?  ); {
-FILE* fp;
-fuel_total;
+printf ("The total fuel you need for the rockets modules is:", fuel_total)
 }
 
 
 
-/* AHHHHHHHHHH
-
-int modules (void) {
-    char line [MAX_DIGITS] [MAX_LINES];
-    char input[];
-    FILE* fp = NULL;
-}
-
-int fuel_for_module = modules /= 3 -= 2 ;// rounding after / 3?
-int total_fuel = (fuel_for_module) ;
-
-
+/*
 keep the fuel for each module in an array, you'll need them seperate for part 2
 gotta use tail recursion
 recursion
