@@ -23,16 +23,18 @@ int upperbound = 767253;
 
 // 2. Modularise password conditions 
 
-int valid_passwords = 0 ; // a running total we'll switch into each module for the return?
+int valid_passwords = 0 ; // a running total to switch into each module for the return?
 
 int digits () { // number of passwords that satisfies A
-    (999999 -= 111111) += 1
-    ;
+    999999 -= 111111 += 1;
+
+    return 0;
 }
 
 int in_range () { // number of passwords that satisfies B
-    (upperbound -= lowerbound) += 1
-    ;
+    (upperbound -= lowerbound) += 1;
+
+    return 0;
 }
 
 /* how many numbers are there between 111111 - 999999 that have at least one pair?
@@ -48,18 +50,25 @@ int valid_pairs (){ // number of passwords that satisfies C
         = 0;
     if(<= upperbound)
         = 0;
+    
+    return 0;
 }
 
 int size_matters () { // number of passwords that satisfies D
 
-
+    return 0;
 }
 
 // 3. Main? Count how many passwords there are?
 
 int main () {
     
+    int all_passwords[999999]; // https://stackoverflow.com/questions/43240949/populating-an-array-with-100-integers-in-c
+    for(int i = 111111; i <1000000; i++)
+    all_passwords[i] = i; 
 
+
+    return 0;
 }
 
 /*
