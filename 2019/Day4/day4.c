@@ -10,6 +10,10 @@ Looking for a password:
 How many different password combinations exist in your range?
 */
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
 /* 1. Read/Process the number range
 (to generalise, ask people who read my code to manually change lower and upper bounds?)
 */
@@ -18,25 +22,42 @@ int upperbound = 767253;
 
 // 2. Modularise password conditions 
 
-int valid_passwords; // a running total we'll switch into each module
+int valid_passwords = 0 ; // a running total we'll switch into each module for the return?
 
-int in_range () { // number of passwords that satisfy A and B
-    (upperbound -= lowerbound) += 1;
-    valid_passwords += in_range
+int digits () { // number of passwords that satisfies A
+    (999999 -= 111111) += 1
 }
 
-= (upperbound -= lowerbound) += 1; 
-int number_pairs (){ //something like this, so you can still change the range
+int in_range () { // number of passwords that satisfies B
+    (upperbound -= lowerbound) += 1;
+}
+
+/* how many numbers are there between 111111 - 999999 that have at least one pair?
+    9 * 4 = 36      digits * (digits - pair) = 1 spot
+    36 * 5 = 180    1 spot * number of spots = 1 pair 
+    180 * 9 = 1620  1 pair * number of pairs = total pairs
+*/
+int pairs = 1620; 
+
+int valid_pairs (){ // number of passwords that satisfies C
+    
     if >= lowerbound
         = 0;
     if <= upperbound
         = 0;
 }
 
+int size_matters () { // number of passwords that satisfies D
+
+
+}
+
 // 3. Main? Count how many passwords there are?
 
 int main () {
-
-
+    valid_passwords += digits;
+    valid_passwords -= in_range;
+    valid_passwords -= valid_pairs;
+    valid_passwords -= size_matters;
 
 }
