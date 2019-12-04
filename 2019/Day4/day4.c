@@ -37,7 +37,7 @@ int max_pairs = 1620 ;
 36 * 5 = 180    1 spot * number of spots = 1 pair 
 180 * 9 = 1620  1 pair * number of pairs = total pairs
 */
-int size_matters = 0;     // D  
+int size_of_digit = 0;     // D  
 int increment = 0;
 
 
@@ -79,14 +79,14 @@ int main () {
 
 
     // number of passwords that satisfies condition D
-    size_matters;
+    size_of_digit;
         if (all_passwords[] == ([0]<=[1]<=[2]<=[3]<=[4]<=[5])) {
-            size_matters += 1;
+            size_of_digit += 1;
         }
         else {
-            size_matters += 0;
+            size_of_digit += 0;
         }
-    printf ("size = %d", size_matters);
+    printf ("size = %d", size_of_digit);
 
 
 
