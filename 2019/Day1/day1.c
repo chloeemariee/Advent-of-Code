@@ -1,5 +1,5 @@
 /* Advent of Code 2019
-Day 1: The Tyranny of the Rocket Equation
+Day 1: The Tyranny of the Rocket Equation PART 1
 
 "the fuel required for a module =  its mass, divide by three, round down, and subtract 2"
 
@@ -16,22 +16,24 @@ Calculate the fuel for each module (input.txt) and sum them
 #define MAX_DIGITS 100
 
 
-/* What is going on? What to do now?
-1. Open input.txt
+// 1. Open input.txt aka file IO
 
-copy format from existing files in C
+fp = fopen("input.txt","r");
+//needs to read.lines or something
+int mass;
+fclose(fp);
 
-2. Define variables
+// 2. Define variables
 
-mass = input.txt
-fuel = (( mass /3 ) - 2 )
-fuel_total = SUM(fuel)
+int mass = input.txt ;
+int fuel = (( mass / 3 ) - 2 ) ; // how do you round down?
+int fuel_total = SUM(fuel) ;
 
-3. Main?
+// 3. Main
 
-int main ; {
-
-
+int main (//what going in here?  ); {
+FILE* fp;
+fuel_total;
 }
 
 
@@ -43,11 +45,6 @@ int modules (void) {
     char input[];
     FILE* fp = NULL;
 }
-
-//File IO
-fp = fopen("input.txt","r");
-int modules;
-fclose(fp);
 
 int fuel_for_module = modules /= 3 -= 2 ;// rounding after / 3?
 int total_fuel = (fuel_for_module) ;
