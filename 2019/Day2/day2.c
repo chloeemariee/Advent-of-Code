@@ -22,16 +22,40 @@ Read the opcodes in chunks of four i.e.
 #include <string.h>
 
 // 1. Open file
+FILE* fp;
+
+fp = fopen( "input.txt", "r" );
+reader( fp, line[], )
+fclose(fp);
 
 // 2. Change .txt char to int 
 
 // 3. Split string into groups of four [0] [1] [2] [3]
 
+line []
+
 // 4. "Make a computer" to read 1, 2, 99 as commands
+
+int the_computer () {
+    if [0] = 1 ; 
+        [1] += [2]
+        // output into [3]
+    else [0] = 2 ; 
+        [1] *= [2]
+        // output into [3]
+    else [0] = 99;
+        printf ("End of Programme")
+}
 
 // 5. "replace position [1] with the value 12 and replace position 2 with the value 2."
 
+int main () {
+FILE* fp;
+
+}
+
 // 6. Print "value at position [0]" after the programme ends
 
+printf ("the value at position 0 is:" [0])
 
 //indexing ????
