@@ -58,12 +58,12 @@ int main () {
 
 
     // number of passwords that satisfy condition A
-    six_digits = (999999 -= 111112 += 1);             //Why can't I add two things here and ...
+    six_digits = 999999 - 111112 + 1; 
     printf ("digits = %d", six_digits);
 
 
     // number of passwords that satisfies condition B
-    in_range = (upperbound -= lowerbound) += 1;       // ...here???? I could get rid of A, B works to do the same
+    in_range = upperbound - lowerbound + 1; 
     printf ("in range = %d", in_range);
 
 
