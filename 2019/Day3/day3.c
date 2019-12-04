@@ -61,3 +61,7 @@ void mover (const char current_move, int *x, int *y) { //cont char becuase it sa
 }
 //try executing this function to make sure it's working, i.e. print all the x, y coordinates in a column
 // you'll need to change how it prints at the end obviously
+
+/*
+*
+* dvv 
