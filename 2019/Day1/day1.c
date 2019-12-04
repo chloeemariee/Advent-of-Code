@@ -17,20 +17,21 @@ Calculate the fuel for each module (input.txt) and sum them
 
 
 // Main, find fuel total for rocket modules
-int main (what_goes_in_here); {
+int main () {
 
 FILE* fp;
-fuel_total;
 
-int fuel = (( mass / 3 ) - 2 ) ; // how do you round down?
-int fuel_total = SUM(fuel) ;
+int mass = 0;
 
 fp = fopen("input.txt","r");
-//needs to read.lines or something
-int mass;
+reader (mass);
 fclose(fp);
 
-printf ("The total fuel you need for the rockets modules is:", fuel_total)
+int fuel = (( mass / 3 ) - 2 ) ; // how do you round down?
+int fuel_total = sum(fuel) ;
+
+printf("Sum of array is %d.", fuel_total); //https://www.tutorialspoint.com/learn_c_by_examples/sum_of_array_in_c.htm
+
 }
 
 
