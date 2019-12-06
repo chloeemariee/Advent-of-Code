@@ -12,7 +12,7 @@ Calculate the fuel for each module (input.txt) and sum them
 #include <string.h>
 #include <math.h>
 
-int fuel_total (int fuel[], int n); {
+int fuel_total (int fuel[], int n) {
     int sum = 0;
 
     for (int i = 0; i < n; i++)
