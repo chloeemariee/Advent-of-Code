@@ -12,24 +12,26 @@ Calculate the fuel for each module (input.txt) and sum them
 #include <string.h>
 #include <math.h>
 
-/* why is this here?
-#define MAX_LINES 500
-#define MAX_DIGITS 100
-*/
+int fuel_total (int fuel[], int n); {
+    int sum = 0;
 
-// Main, find fuel total for rocket modules
+    for (int i = 0; i < n; i++)
+    sum += fuel[i];
+
+    return fuel_total;
+}
+
+// Main: find fuel total for rocket modules
 int main () {
 
-FILE* fp;
-char mass;
+    FILE* fp;
+    int mass;
 
-fp = fopen("input.txt","r");
-    int fuel = (( mass / 3 ) - 2 ) ; // how do you round down?
-    int fuel_total = sum(fuel) ;
-fclose(fp);
+    fp = fopen("input.txt","r");
+        int fuel = (( mass / 3 ) - 2 ) ; // how do you round down?
+    fclose(fp);
 
-printf("Sum of array is %d.", fuel_total); //https://www.tutorialspoint.com/learn_c_by_examples/sum_of_array_in_c.htm
-
+    printf("Sum of array is %d.", fuel_total); 
 }
 
 
