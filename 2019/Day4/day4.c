@@ -80,7 +80,7 @@ int main () {
 
     // number of passwords that satisfies condition D
     size_of_digit;
-        if (all_passwords[] == ([0]<=[1]<=[2]<=[3]<=[4]<=[5])) {
+        if (all_passwords[i] == ([0]<=[1]<=[2]<=[3]<=[4]<=[5])) {
             size_of_digit += 1;
         }
         else {

@@ -50,6 +50,7 @@ int main (void) {
 // eats charaters and the spits out where you go, declare a function:
 void mover (const char current_move, int *x, int *y) { //cont char becuase it saves on memory
     //switch case statement, a more compact way to do a long else if
+   
     switch ( current_move ) {
         case ( "R"): *x = *x + 1; break; // same thing as x -= 1 I think
         case ( "U"): *y = *y + 1; break;
@@ -61,7 +62,3 @@ void mover (const char current_move, int *x, int *y) { //cont char becuase it sa
 }
 //try executing this function to make sure it's working, i.e. print all the x, y coordinates in a column
 // you'll need to change how it prints at the end obviously
-
-/*
-*
-* dvv 

@@ -21,7 +21,7 @@ int fuel_total (int fuel[], int n) {
     return fuel_total;
 }
 
-// Main: find fuel total for rocket modules
+// Main find fuel total for rocket modules
 int main () {
 
     FILE* fp;
@@ -32,16 +32,18 @@ int main () {
     fclose(fp);
 
     printf("Sum of array is %d.", fuel_total); 
+
 }
 
 /* If I ever get to Part 2 
-keep the fuel for each module in an array, you'll need them seperate for part 2
+put the fuel for each module in an array, you'll need them seperate for part 2
 gotta use tail recursion
-recursion
-base case
-recursive case
+    recursion
+        base case
+        recursive case
  
-if fuel <= 0 
-    return total;
-typecasting
+    if fuel <= 0 
+        return total;
+        
+typecasting?
 */ 

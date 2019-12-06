@@ -15,9 +15,7 @@ Read the opcodes in chunks of four i.e.
 99,         END
 30,40,50    ....
 
-
 Need this for Day 5
-
 
 */
 
@@ -25,46 +23,40 @@ Need this for Day 5
 #include <stdlib.h>
 #include <string.h>
 
-// 1. Open file
-FILE* fp;
 
-fp = fopen( "input.txt", "r" );
-reader( fp, line[], )
-fclose(fp);
-
-// 2. Change .txt char to int 
-
-// 3. Split string into groups of four [0] [1] [2] [3]
+// Split string into groups of four [0] [1] [2] [3]
     // https://stackoverflow.com/questions/2723932/reading-bytes-from-a-text-file-that-has-the-form-of-machine-code-in-c
     // buffer?
     // https://stackoverflow.com/questions/3758956/reading-file-input-as-opcode-in-c
     // day 4 just came out gotta go ... :(
-line []
 
-
-
-// 4. "Make a computer" to read 1, 2, 99 as commands
+// "Make a computer" to read 1, 2, 99 as commands
 
 int read_opcode () {
-    if [0] = 1 ; 
-        [1] += [2]
-        // output into [3]
-    else [0] = 2 ; 
-        [1] *= [2]
-        // output into [3]
-    else [0] = 99;
-        printf ("End of Programme")
+    if (code[0] = 1) 
+        code[1] += code[2];
+        // output into [3]?
+    else (code[0] = 2) 
+        code[1] *= code[2];
+        // output into [3]?
+    else code([0] = 99)
+        printf ("End of Programme");
 }
 
-// 5. "replace position [1] with the value 12 and replace position 2 with the value 2."
+// "replace position [1] with the value 12 and replace position 2 with the value 2."
 
 int main () {
-FILE* fp;
+    FILE* fp;
+
+    fp = fopen( "input.txt", "r" );
+    reader( fp, line[:], code[:]);
+    fclose(fp);
+
+    read_opcode;
+
+    printf ("the value at position 0 is:", [0]); // 6. Print "value at position [0]" after the programme ends
 
 }
 
-// 6. Print "value at position [0]" after the programme ends
 
-printf ("the value at position 0 is:" [0])
-
-//indexing ????
+//what's indexing ????
