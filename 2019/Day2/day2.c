@@ -15,6 +15,10 @@ Read the opcodes in chunks of four i.e.
 99,         END
 30,40,50    ....
 
+
+Need this for Day 5
+
+
 */
 
 #include <stdio.h>
@@ -31,9 +35,9 @@ fclose(fp);
 // 2. Change .txt char to int 
 
 // 3. Split string into groups of four [0] [1] [2] [3]
-    //https://stackoverflow.com/questions/2723932/reading-bytes-from-a-text-file-that-has-the-form-of-machine-code-in-c
+    // https://stackoverflow.com/questions/2723932/reading-bytes-from-a-text-file-that-has-the-form-of-machine-code-in-c
     // buffer?
-    //https://stackoverflow.com/questions/3758956/reading-file-input-as-opcode-in-c
+    // https://stackoverflow.com/questions/3758956/reading-file-input-as-opcode-in-c
     // day 4 just came out gotta go ... :(
 line []
 

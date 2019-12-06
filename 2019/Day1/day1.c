@@ -34,8 +34,6 @@ int main () {
     printf("Sum of array is %d.", fuel_total); 
 }
 
-
-
 /* If I ever get to Part 2 
 keep the fuel for each module in an array, you'll need them seperate for part 2
 gotta use tail recursion
