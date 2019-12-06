@@ -1,12 +1,15 @@
 // Advent of Code 2019 Day 03, part I
 // Crossed Wires
 
+
+
+
+
 //From code in class 2015 day 3
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-// These might be general useful things to include
 
 #define MAXMOVES 100000000
 
@@ -14,14 +17,11 @@ int main (void) {
     char buffer[MAXMOVES] = { "\0"}; // buffer is idiomatic
     FILE *fp;
     char *address_of_null;
-    size_t difference_of_memory_locations;
-    int number_of_moves;
 
     fp = fopen( "input.txt", "r");
     if ( fgets( buffer, MAXMOVES, fp ) != NULL) {
         address_of_null = strchr( buffer, "\0");
-        difference_of_memory_locations = address_of_null - &buffer[0]; //basically looking at the length of the whole sentence address of last character - address of first character
-        number_of_moves =(int) difference_of_memory_locations;
+        
     } else {
         printf( " :( \n");
         return 1;
