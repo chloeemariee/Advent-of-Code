@@ -10,10 +10,10 @@ all_layers =  [int(i) for i in open('input.txt', 'r').read().strip()] # more eff
 
 # Define variables
 # how to define variables these https://paste.ofcode.org/MYzf7jtL5nBpw8DJFzmqVv
-image_size = 25*6   # = 150
-pixels = len(all_layers)
-number_of_layers = int(pixels/image_size)
-pixels_per_layer = int(pixels/number_of_layers)
+image_size = 25*6                               # = 150
+pixels = len(all_layers)                        # = 15000
+number_of_layers = int(pixels/image_size)       # = 100
+pixels_per_layer = int(pixels/number_of_layers) # = 150
 
 # Find the right layer
 # how to https://www.reddit.com/r/adventofcode/comments/e7pkmt/2019_day_8_solutions/fa6re9v/
@@ -23,11 +23,10 @@ def count_pixels(num, layer):
 def count_zeroes(layer):
     return count_pixels (0, layer)
 
-def special_layer ():
-    pixels_per_layer
+def right_layer (all_layers):
     the_layer = min(pixels_per_layer, key=count_zeroes)
     ones = count_num(1, the_layer)
     twos = count_num(2, the_layer)
     return ones * twos
-
-print(f"final answer:", special_layer())
+    
+print("the final layer:", right_layer(all_layers))
