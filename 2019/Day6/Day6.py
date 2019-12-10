@@ -8,3 +8,8 @@ with open("input.txt") as f:
 
 
 #can't i create a set of all the objects in space...? all the unique ones are the number of connections...cheating but will work
+
+number_of_orbits = set(orbits)
+
+print(len(orbits))
+
