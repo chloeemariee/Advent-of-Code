@@ -31,11 +31,14 @@ int main () {
         int fuel = (( mass / 3 ) - 2 ) ; // how do you round down?
     fclose(fp);
 
-    printf("Sum of array is %d.", fuel_total); 
+    printf("Sum of array is %d. \n", fuel_total); 
 
 }
 
-/* If I ever get to Part 2 
+/* The answer I get keeps changing, there's something wrong with how I'm processing the math here.
+
+
+If I ever get to Part 2 
 put the fuel for each module in an array, you'll need them seperate for part 2
 gotta use tail recursion
     recursion
