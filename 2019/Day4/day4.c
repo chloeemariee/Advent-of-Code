@@ -27,8 +27,7 @@ int upperbound = 767253; //last real option 666666
 // Define variables
 
 int valid_passwords = 0 ; // running total
-int six_digits = 0;          // A  
-int in_range = 0;            // B  
+int in_range = 0;            // AB  
 int valid_pairs = 0;         // C  
 int pairs = 0;  
 int max_pairs = 1620 ;
@@ -37,16 +36,26 @@ int max_pairs = 1620 ;
 36 * 5 = 180    1 spot * number of spots = 1 pair 
 180 * 9 = 1620  1 pair * number of pairs = total pairs
 */
-int size_of_digit = 0;     // D  
+ 
 int increment = 0;
 
+int size_of_digit (int all_passwords[], int n) {   // D 
+        for (int i = 0; i < n; i++)
+        if (all_passwords[i] == ([0]<=[1]<=[2]<=[3]<=[4]<=[5])) {
+            size_of_digit += 1;
+        }
+        else {
+            size_of_digit += 0;
+        }
+return size_of_digit;
+}
 
 
 // Main
 
 int main () {
     
-    // array of all possible passwords
+    // array of all possible passwords (satisfies A and B)
     int all_passwords[in_range]; // https://stackoverflow.com/questions/43240949/populating-an-array-with-100-integers-in-c
     for(int i = lowerbound; i <upperbound; i++)
     all_passwords[i] = i; 
@@ -57,12 +66,7 @@ int main () {
     // Password Conditions 
 
 
-    // number of passwords that satisfy condition A
-    six_digits = 999999 - 111112 + 1; 
-    printf ("digits = %d", six_digits);
-
-
-    // number of passwords that satisfies condition B
+    // number of passwords that satisfies condition AB
     in_range = upperbound - lowerbound + 1; 
     printf ("in range = %d", in_range);
 
@@ -74,11 +78,11 @@ int main () {
         if (pairs >= upperbound)
             valid_pairs += 0;
         else (max_pairs - pairs);
-        // idk what I'm doing here, should I find where all the pairs are in the array?
+        // idk what I'm doing here, should I find where all the pairs are in the array? <= used differently in C v D
     printf ("pairs = %d", valid_pairs);
 
 
-    // number of passwords that satisfies condition D
+    /* number of passwords that satisfies condition D
     size_of_digit;
         if (all_passwords[i] == ([0]<=[1]<=[2]<=[3]<=[4]<=[5])) {
             size_of_digit += 1;
@@ -86,11 +90,11 @@ int main () {
         else {
             size_of_digit += 0;
         }
-    printf ("size = %d", size_of_digit);
+    */
+   printf ("size = %d", size_of_digit);
 
 
-
-    valid_passwords = ((((valid_passwords + six_digits )- in_range) - valid_pairs ) - size_matters); 
+    valid_passwords = (((valid_passwords + in_range) - valid_pairs ) - size_of_digit); 
     printf ("number of valid passwords = %d", valid_passwords);
     return 0;
 }
