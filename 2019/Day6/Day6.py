@@ -5,10 +5,10 @@ import sys
 
 # for direct orbits
 
-# file IO
+# file IO reddit.com/r/adventofcode/comments/e6tyva/2019_day_6_solutions/f9wefu1/
 with open("input.txt") as f:
     for line in f:
-    orbits = [line.rstrip()] #https://www.reddit.com/r/adventofcode/comments/e6tyva/2019_day_6_solutions/f9wefu1/
+    orbits = [line.rstrip()] 
     planet = orbit.split(")")[0]
     satellite = orbit.split(")")[1]
 
