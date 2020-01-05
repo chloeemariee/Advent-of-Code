@@ -1,6 +1,7 @@
 # Advent of Code 2019 Day 6
 # Universal Orbit Map
 
+import sys
 
 # for direct orbits
 
@@ -11,17 +12,28 @@ with open("input.txt") as f:
     planet = orbit.split(")")[0]
     satellite = orbit.split(")")[1]
 
-# make a tree. How do you make a tree? build??
-build tree 
-    where planet = root
-    and   satellite = branch
-    reccur  
+# make a tree. How do you make a tree? build?? https://pastebin.com/68HG0LKW
+def findOrbits(orbitArray, world, count):
+    for i in orbitArray:
+       
+        localCount = count
+        endCheck = i[0]
+        worldCheck = i[1]
+       
+        if(worldCheck==world):
+            if(endCheck!="COM"):
+                localCount += 1
+                returnValue = findOrbits(orbitArray,endCheck,localCount)
+            else:
+                localCount +=1
+                returnValue = localCount
+               
+    return returnValue 
 
-# count direct and indirect orbits
-direct = pairs
-indirect = run through the whole tree
-
-total_orbits = direct + indirect
+# count direct and indirect orbits https://pastebin.com/68HG0LKW
+for count in orbits:
+    number = findOrbits(orbits, count, 0)
+    orbitCount += number
 
 # does this work?
 print(total_orbits)
