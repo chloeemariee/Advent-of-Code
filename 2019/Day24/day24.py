@@ -5,28 +5,41 @@
 
 with open("input.txt") as f:
     for line in f:
+        initial_state = read.lines
+            "#" = living
+            "." = empty
 
 #Part 1 define the game parameters
 
-def alive
-    if 
-    else
+def alive 
+    if surrounding = living;
+        new_bug
+    else ;
+        empty
 
 def dead
-    if 
-    else
-
-
-
-
-# part 2 remember the configurations
+    if surrounding = empty;
+        dead_bug
+    else ;
+        empty
 
 #increasing powers of two
 def biodiversity 
-    if alive
+    if alive ;
         * []2
 
-def number_of_moves
-    enumerate
+def new_biodiversity (biodiversity){
+    biodiversity [];
+}
 
-printf( "number of moves %d", number_of_moves);
+def play_game (initial_state, alive, dead) {
+    while new_biodiversity;
+        number_of_moves + 1
+}
+
+# part 2 remember the configurations
+
+def number_of_moves
+    enumerate ;
+
+print( "number of moves %d", number_of_moves);
